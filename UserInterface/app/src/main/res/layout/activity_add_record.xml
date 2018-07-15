@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.testing.yasir.userinterface.addRecord">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_height="fill_parent">
+
+        <!--Put form controls here-->
+        <EditText
+            android:id="@+id/EditTextFName"
+            android:layout_height="70dp"
+            android:hint="@string/FirstName"
+            android:inputType="textPersonName"
+            android:textSize="18dp"
+            android:layout_width="fill_parent">
+        </EditText>
+        <EditText
+            android:id="@+id/EditTextLName"
+            android:layout_height="70dp"
+            android:textSize="18dp"
+            android:hint="@string/LastName"
+            android:inputType="textPersonName"
+            android:layout_width="fill_parent">
+        </EditText>
+        <EditText
+            android:id="@+id/EditTextAge"
+            android:layout_height="70dp"
+            android:textSize="18dp"
+            android:hint="@string/Age"
+            android:inputType="numberDecimal"
+            android:layout_width="fill_parent"
+            android:cursorVisible="false">
+        </EditText>
+        <Spinner
+            android:id="@+id/gender"
+            android:layout_height="48dp"
+            android:textSize="18dp"
+            android:prompt="@string/gender"
+            android:background="@drawable/custom_spinner"
+            android:layout_width="fill_parent">
+        </Spinner>
+        <Spinner
+            android:id="@+id/location"
+            android:layout_height="48dp"
+            android:textSize="18dp"
+            android:prompt="@string/district"
+            android:background="@drawable/custom_spinner"
+            android:layout_width="fill_parent"
+            >
+        </Spinner>
+        <Spinner
+            android:id="@+id/disease"
+            android:layout_height="48dp"
+            android:textSize="18dp"
+            android:prompt="@string/gender"
+            android:background="@drawable/custom_spinner"
+            android:layout_width="fill_parent"
+            >
+        </Spinner>
+
+        <Button
+            android:id="@+id/ButtonSendData"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_button_design"
+            android:text="@string/SEND"
+            android:onClick="onClick"
+            android:textColor="@color/lightgrayline"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </Button>
+    </LinearLayout>
+</ScrollView>

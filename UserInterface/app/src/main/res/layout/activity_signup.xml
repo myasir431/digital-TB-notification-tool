@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.testing.yasir.userinterface.signup">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_height="fill_parent">
+
+        <!--Put form controls here-->
+        <EditText
+            android:id="@+id/Name"
+            android:layout_height="70dp"
+            android:hint="@string/Name"
+            android:inputType="textPersonName"
+            android:textSize="18dp"
+            android:layout_width="fill_parent" />
+
+        <Spinner
+            android:id="@+id/location"
+            android:layout_height="48dp"
+            android:prompt="@string/gender"
+            android:textSize="24dp"
+            android:background="@drawable/custom_spinner"
+
+            android:layout_width="match_parent">
+        </Spinner>
+
+        <EditText
+            android:id="@+id/pass1"
+            android:layout_height="70dp"
+            android:hint="@string/Password"
+            android:inputType="textPassword"
+            android:textSize="18dp"
+            android:layout_width="fill_parent" />
+        <EditText
+            android:id="@+id/cpass"
+            android:layout_height="70dp"
+            android:hint="@string/ConfirmPassword"
+            android:inputType="textPassword"
+            android:textSize="18dp"
+            android:layout_width="fill_parent"
+            android:cursorVisible="true">
+        </EditText>
+
+        <Button
+            android:id="@+id/ButtonSignup"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_button_design"
+            android:text="@string/signup"
+            android:textColor="@color/lightgrayline"
+            android:textSize="16sp"
+            android:onClick="onSignupClick">
+
+        </Button>
+    </LinearLayout>
+</LinearLayout>
